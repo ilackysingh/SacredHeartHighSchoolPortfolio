@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KidKinder - Kindergarten Website Template</title>
+    <link rel="icon" href="img/logo.ico">
+    <title>Sacred Heart School, Mahakali</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Sacred Heart School" name="keywords">
+    <meta content="School Static Website" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon
+    <link href="img/logo.ico" rel="icon"> -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,6 +28,43 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .logo-image {
+            width: 12%;
+        }
+
+        .new-effect.carousel-control-prev,
+        .new-effect.carousel-control-next {
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            background-color: #00bfff;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .new-effect.carousel-control-prev:hover,
+        .new-effect.carousel-control-next:hover {
+            opacity: 1;
+        }
+
+        .new-effect.carousel-control-prev {
+            left: -20px;
+        }
+
+        .new-effect.carousel-control-next {
+            right: -20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,8 +72,8 @@
     <div class="container-fluid bg-light position-relative shadow">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
             <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">KidKinder</span>
+                <img src="img/logo.png" alt="Logo" class="logo-image">
+                <span class="text-primary">Sacred Heart School</span>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -47,16 +85,16 @@
                     <a href="class.html" class="nav-item nav-link">Classes</a>
                     <a href="team.html" class="nav-item nav-link">Teachers</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                             <a href="single.html" class="dropdown-item">Blog Detail</a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary px-4">Join Class</a>
+                <a href="https://app.sacredhearthighschool.in/" class="btn btn-primary px-4">Login</a>
             </div>
         </nav>
     </div>
@@ -87,22 +125,25 @@
                 <div class="col-lg-7">
                     <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
                     <h1 class="mb-4">Best School For Your Kids</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    <p>At Sacred Heart School, we strive to provide the best education and nurturing environment for
+                        your children.
+                        Here's why we are the ideal choice:</p>
                     <div class="row pt-2 pb-4">
                         <div class="col-6 col-md-4">
                             <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
                         </div>
                         <div class="col-6 col-md-8">
                             <ul class="list-inline m-0">
-                                <li class="py-2 border-top border-bottom"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                                <li class="py-2 border-top border-bottom"><i
+                                        class="fa fa-check text-primary mr-3"></i>State-of-the-Art Facilities</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Safe and
+                                    Supportive Environment</li>
+                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Holistic
+                                    Development</li>
                             </ul>
                         </div>
                     </div>
-                    <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+                    <a href="about.html" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
                 </div>
             </div>
         </div>
@@ -118,8 +159,10 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>Play Ground</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <h4>Science & Tech</h4>
+                            <p class="m-0">Our school's technology program provides students with access to
+                                resources that enhance learning, prepare them for the digital age, and develop
+                                their problem-solving and critical thinking skills.</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +171,9 @@
                         <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Music and Dance</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <p class="m-0">Our school's music and dance programs provide students with the opportunity
+                                to explore their passion for the arts, express themselves creatively, and develop
+                                skills via a variety of classes and performances.</p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +182,9 @@
                         <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Arts and Crafts</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <p class="m-0">Our school's arts and crafts program offers students of all skill levels the
+                                opportunity to express their creativity and develop valuable skills through a wide range
+                                of activities and workshops.</p>
                         </div>
                     </div>
                 </div>
@@ -145,8 +192,10 @@
                     <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
                         <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
-                            <h4>Safe Transportation</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <h4>Transportation</h4>
+                            <p class="m-0">Our school's safe transportation services provide students with reliable and
+                                secure transportation options to and from school, ensuring their safety and peace of
+                                mind for parents.</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +204,9 @@
                         <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Healthy food</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <p class="m-0">Our school's canteen offers healthy and delicious food options for students,
+                                providing them with the energy and nutrition they need to excel in their studies and
+                                other activities.</p>
                         </div>
                     </div>
                 </div>
@@ -164,7 +215,9 @@
                         <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
                         <div class="pl-4">
                             <h4>Educational Tour</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
+                            <p class="m-0">Our school's educational tour program offers students the opportunity to
+                                learn outside the classroom and gain hands-on experience through visits to museums,
+                                historical sites, and other educational destinations.</p>
                         </div>
                     </div>
                 </div>
@@ -256,12 +309,17 @@
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
-                    <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">KidKinder</span>
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                    style="font-size: 40px; line-height: 40px;">
+                    <img src="img/logo.png" alt="Logo" class="logo-image">
+                    <span class="text-white">Sacred Heart School, Mahakali</span>
                 </a>
-                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
-                <div class="d-flex justify-content-start mt-4">
+                <h5 class="text-white"><strong>Igniting Minds, <br>Empowering Futures</strong></h5>
+                <p>We are dedicated to providing a nurturing and inclusive learning environment that fosters academic
+                    excellence, personal growth, and character development. With a commitment to holistic education, we
+                    strive to inspire and empower our students to become lifelong learners, critical thinkers, and
+                    responsible global citizens. </p>
+                <!-- <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
@@ -270,48 +328,49 @@
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                </div> -->
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
                 <h3 class="text-primary mb-4">Get In Touch</h3>
                 <div class="d-flex">
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Address</h5>
-                        <p>123 Street, New York, USA</p>
+                        <p>Mahakali Caves Road, Andheri East, Mumbai 400093.</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Email</h5>
-                        <p>info@example.com</p>
+                        <p>sacredheartschool11062009@gmail.com</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-phone-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Phone</h5>
-                        <p>+012 345 67890</p>
+                        <p>+91 91525 83050</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
                 <h3 class="text-primary mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="class.html"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
+                    <a class="text-white mb-2" href="team.html"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
+                    <a class="text-white mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Newsletter</h3>
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
+                <h3 class="text-primary mb-4">School Magazine</h3>
                 <form action="">
                     <div class="form-group">
-                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name"
+                            required="required" />
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
@@ -323,11 +382,12 @@
                 </form>
             </div>
         </div>
-        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+        <div class="container-fluid pt-3" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                &copy; <a class="text-primary font-weight-bold" href="#">SacredHeartHighSchool</a>. All Rights Reserved.
+                Designed
                 by
-                <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                <a class="text-primary font-weight-bold" href="https://lacky.anacky.com">Lacky Singh</a>
             </p>
         </div>
     </div>

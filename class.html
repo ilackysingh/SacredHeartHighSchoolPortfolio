@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KidKinder - Kindergarten Website Template</title>
+    <link rel="icon" href="img/logo.ico">
+    <title>Sacred Heart School, Mahakali</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Sacred Heart School" name="keywords">
+    <meta content="School Static Website" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon
+    <link href="img/logo.ico" rel="icon"> -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,6 +28,43 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .logo-image {
+            width: 12%;
+        }
+
+        .new-effect.carousel-control-prev,
+        .new-effect.carousel-control-next {
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            background-color: #00bfff;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .new-effect.carousel-control-prev:hover,
+        .new-effect.carousel-control-next:hover {
+            opacity: 1;
+        }
+
+        .new-effect.carousel-control-prev {
+            left: -20px;
+        }
+
+        .new-effect.carousel-control-next {
+            right: -20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,29 +72,29 @@
     <div class="container-fluid bg-light position-relative shadow">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
             <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">KidKinder</span>
+                <img src="img/logo.png" alt="Logo" class="logo-image">
+                <span class="text-primary">Sacred Heart School</span>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="class.html" class="nav-item nav-link active">Classes</a>
                     <a href="team.html" class="nav-item nav-link">Teachers</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                             <a href="single.html" class="dropdown-item">Blog Detail</a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary px-4">Join Class</a>
+                <a href="https://app.sacredhearthighschool.in/" class="btn btn-primary px-4">Login</a>
             </div>
         </nav>
     </div>
@@ -84,91 +122,497 @@
                 <p class="section-title px-5"><span class="px-2">Popular Classes</span></p>
                 <h1 class="mb-4">Classes for Your Kids</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Drawing Class</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+
+            <div id="classCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Nursery Class</h4>
+                                        <p class="card-text">Our Nursery Class is designed to provide a caring and
+                                            engaging environment for children,
+                                            and setting them on a path of curiosity, creativity, and social development
+                                            right from the early stage.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">3.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">01 PM - 03 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹500 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Junior KinderGarten (Jr KG)</h4>
+                                        <p class="card-text">Our Junior KG Class is designed to provide a nurturing and
+                                            stimulating environment for children,
+                                            fostering their cognitive, social, and emotional development while igniting
+                                            their love for learning.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">4.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">01 PM - 04 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹500 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Senior KinderGarten (Sr KG)</h4>
+                                        <p class="card-text">Our Senior KG Class is designed to provide a enriching and
+                                            encouraging environment for children,
+                                            preparing them for a smooth transition to primary school while fostering
+                                            their overall development.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">5.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">01 PM - 04 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹500 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">I Class</h4>
+                                        <p class="card-text">In our 1st-grade class, we create a safe, and interactive
+                                            learning environment where young learners
+                                            are encouraged to develop foundational skills, explore their curiosity, and
+                                            grow socially and emotionally.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">6.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">01 PM - 06 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
+                            <div class="col-lg-3 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">II Classs</h4>
+                                        <p class="card-text">Our 2nd-grade class is designed to provide an engaging and
+                                            supportive environment for students,
+                                            building upon their foundational skills while nurturing their creativity and
+                                            social growth.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">7.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">01 PM - 06 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
+                            <div class="col-lg-3 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">III Class</h4>
+                                        <p class="card-text">Our 3rd-grade class fosters a dynamic and inclusive
+                                            environment,
+                                            nurturing students' curiosity, independence, and academic growth through
+                                            engaging activities and meaningful interactions.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">8.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">01 PM - 06 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
+                            <div class="col-lg-3 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">IV Class</h4>
+                                        <p class="card-text">Our 4th-grade class creates a stimulating and supportive
+                                            environment,
+                                            empowering students to explore, collaborate, and excel academically while
+                                            fostering their social and emotional development.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">9.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">01 PM - 06 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1 text-nowrap">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">V Class</h4>
+                                        <p class="card-text">Our 5th-grade class is designed to create an invigorating
+                                            and supportive atmosphere for students,
+                                            equipping them with the necessary skills and knowledge for a successful
+                                            transition to middle school while nurturing their holistic growth.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">10.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">VI Class</h4>
+                                        <p class="card-text">Our 6th-grade class is designed to foster an engaging and
+                                            empowering environment for students,
+                                            preparing them for a smooth transition to middle school while cultivating
+                                            their overall development and critical thinking abilities.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">11.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">VII Class</h4>
+                                        <p class="card-text">Our 7th-grade class is designed to provide a dynamic and
+                                            inclusive environment for students,
+                                            preparing them for the challenges of middle school while promoting their
+                                            holistic development and fostering a love for learning.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">12.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">VIII Class</h4>
+                                        <p class="card-text">Our 8th-grade class is designed to create a stimulating and
+                                            supportive atmosphere for students,
+                                            equipping them with the skills and knowledge for a successful transition to
+                                            high school while fostering their personal growth and thinking abilities.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">13.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">IX Class</h4>
+                                        <p class="card-text">Our 9th-grade class is designed to provide a challenging
+                                            and nurturing environment for students,
+                                            preparing them for the demands of high school while fostering their academic
+                                            excellence and preparation for future endeavors.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">14.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <div class="card border-0 bg-light shadow-sm pb-2">
+                                    <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">X Class</h4>
+                                        <p class="card-text">Our 10th-grade class is designed to offer a rigorous and
+                                            supportive environment for students,
+                                            equipping them with the necessary skills for success in higher education and
+                                            beyond, while fostering their growth and critical thinking abilities.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent py-4 px-5">
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong>
+                                            </div>
+                                            <div class="col-6 py-1">15.5 Years</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong>
+                                            </div>
+                                            <div class="col-6 py-1">40 Seats</div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong>
+                                            </div>
+                                            <div class="col-6 py-1">07 AM - 01 PM</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong>
+                                            </div>
+                                            <div class="col-6 py-1">₹550 / Month</div>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Language Learning</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
-                        </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Basic Science</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
-                        </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
-                    </div>
-                </div>
+
+                <!-- Left and Right Arrows -->
+                <!-- Left Control -->
+                <a class="new-effect carousel-control-prev" href="#classCarousel" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <!-- Right Control -->
+                <a class="new-effect carousel-control-next" href="#classCarousel" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
@@ -182,13 +626,14 @@
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <p class="section-title pr-5"><span class="pr-2">Book A Seat</span></p>
                     <h1 class="mb-4">Book A Seat For Your Kid</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    <p>Are you ready to give your child a great learning experience? Book a seat for your kid in our
+                        exciting and educational classes today!</p>
                     <ul class="list-inline m-0">
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Comprehensive Curriculum.</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Progress Monitoring and Feedback.
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Hands-On Learning Opportunities.
+                        </li>
                     </ul>
                     <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
                 </div>
@@ -200,21 +645,34 @@
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                                    <input type="text" class="form-control border-0 p-4" placeholder="Your Name"
+                                        required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                                    <input type="email" class="form-control border-0 p-4" placeholder="Your Email"
+                                        required="required" />
                                 </div>
                                 <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
                                         <option selected>Select A Class</option>
-                                        <option value="1">Class 1</option>
-                                        <option value="2">Class 1</option>
-                                        <option value="3">Class 1</option>
+                                        <option value="Nursery Class">Nursery Class</option>
+                                        <option value="Jr Kg Class">Jr Kg Class</option>
+                                        <option value="Sr Kg Class">Sr Kg Class</option>
+                                        <option value="Class I">Class I</option>
+                                        <option value="Class II">Class II</option>
+                                        <option value="Class III">Class III</option>
+                                        <option value="Class IV">Class IV</option>
+                                        <option value="Class V">Class V</option>
+                                        <option value="Class VI">Class VI</option>
+                                        <option value="Class VII">Class VII</option>
+                                        <option value="Class VIII">Class VIII</option>
+                                        <option value="Class IX">Class IX</option>
+                                        <option value="Class X">Class X</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <button class="btn btn-secondary btn-block border-0 py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-secondary btn-block border-0 py-3" type="submit">Book
+                                        Now</button>
                                 </div>
                             </form>
                         </div>
@@ -230,12 +688,17 @@
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
-                    <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">KidKinder</span>
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                    style="font-size: 40px; line-height: 40px;">
+                    <img src="img/logo.png" alt="Logo" class="logo-image">
+                    <span class="text-white">Sacred Heart School, Mahakali</span>
                 </a>
-                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
-                <div class="d-flex justify-content-start mt-4">
+                <h5 class="text-white"><strong>Igniting Minds, <br>Empowering Futures</strong></h5>
+                <p>We are dedicated to providing a nurturing and inclusive learning environment that fosters academic
+                    excellence, personal growth, and character development. With a commitment to holistic education, we
+                    strive to inspire and empower our students to become lifelong learners, critical thinkers, and
+                    responsible global citizens. </p>
+                <!-- <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
@@ -244,48 +707,49 @@
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                </div> -->
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
                 <h3 class="text-primary mb-4">Get In Touch</h3>
                 <div class="d-flex">
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Address</h5>
-                        <p>123 Street, New York, USA</p>
+                        <p>Mahakali Caves Road, Andheri East, Mumbai 400093.</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Email</h5>
-                        <p>info@example.com</p>
+                        <p>sacredheartschool11062009@gmail.com</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-phone-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Phone</h5>
-                        <p>+012 345 67890</p>
+                        <p>+91 91525 83050</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
                 <h3 class="text-primary mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="class.html"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
+                    <a class="text-white mb-2" href="team.html"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
+                    <a class="text-white mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Newsletter</h3>
+            <div class="col-lg-3 col-md-6 mb-5" style="margin-top: 5rem;">
+                <h3 class="text-primary mb-4">School Magazine</h3>
                 <form action="">
                     <div class="form-group">
-                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name"
+                            required="required" />
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
@@ -297,11 +761,12 @@
                 </form>
             </div>
         </div>
-        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+        <div class="container-fluid pt-3" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                &copy; <a class="text-primary font-weight-bold" href="#">SacredHeartHighSchool</a>. All Rights Reserved.
+                Designed
                 by
-                <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                <a class="text-primary font-weight-bold" href="https://lacky.anacky.com">Lacky Singh</a>
             </p>
         </div>
     </div>
